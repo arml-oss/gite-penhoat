@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://arml-oss.github.io/gite-penhoat/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://arml-oss.github.io/gite-penhoat/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://arml-oss.github.io/gite-penhoat/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://arml-oss.github.io/gite-penhoat/es/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://arml-oss.github.io/gite-penhoat/de/"/>
+    <loc>https://gitedepenhoat.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gitedepenhoat.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gitedepenhoat.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gitedepenhoat.fr/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gitedepenhoat.fr/de/"/>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://arml-oss.github.io/gite-penhoat/en/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://arml-oss.github.io/gite-penhoat/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://arml-oss.github.io/gite-penhoat/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://arml-oss.github.io/gite-penhoat/es/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://arml-oss.github.io/gite-penhoat/de/"/>
+    <loc>https://gitedepenhoat.fr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gitedepenhoat.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gitedepenhoat.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gitedepenhoat.fr/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gitedepenhoat.fr/de/"/>
   </url>
   <url>
-    <loc>https://arml-oss.github.io/gite-penhoat/es/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://arml-oss.github.io/gite-penhoat/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://arml-oss.github.io/gite-penhoat/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://arml-oss.github.io/gite-penhoat/es/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://arml-oss.github.io/gite-penhoat/de/"/>
+    <loc>https://gitedepenhoat.fr/es/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gitedepenhoat.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gitedepenhoat.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gitedepenhoat.fr/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gitedepenhoat.fr/de/"/>
   </url>
   <url>
-    <loc>https://arml-oss.github.io/gite-penhoat/de/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://arml-oss.github.io/gite-penhoat/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://arml-oss.github.io/gite-penhoat/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://arml-oss.github.io/gite-penhoat/es/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://arml-oss.github.io/gite-penhoat/de/"/>
+    <loc>https://gitedepenhoat.fr/de/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gitedepenhoat.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gitedepenhoat.fr/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gitedepenhoat.fr/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gitedepenhoat.fr/de/"/>
   </url>
 </urlset>

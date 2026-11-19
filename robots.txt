@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arml-oss.github.io/gite-penhoat/sitemap.xml
+Sitemap: https://gitedepenhoat.fr/sitemap.xml
