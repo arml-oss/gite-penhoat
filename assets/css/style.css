@@ -1093,3 +1093,10 @@ h1, h2, h3 {
   .lightbox__nav--prev { left: 0.6rem; }
   .lightbox__nav--next { right: 0.6rem; }
 }
+
+/* Légendes photos désactivées (demande du propriétaire) */
+.gallery__item figcaption,
+.region-card figcaption,
+.lightbox__caption {
+  display: none;
+}
