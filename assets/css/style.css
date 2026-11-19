@@ -1044,3 +1044,52 @@ h1, h2, h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Navigation de la visionneuse */
+.lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+  border-radius: 999px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lightbox__nav:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.lightbox__nav--prev {
+  left: 1.2rem;
+}
+
+.lightbox__nav--next {
+  right: 1.2rem;
+}
+
+.lightbox__counter {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .lightbox__nav {
+    width: 42px;
+    height: 42px;
+    font-size: 1.15rem;
+  }
+  .lightbox__nav--prev { left: 0.6rem; }
+  .lightbox__nav--next { right: 0.6rem; }
+}

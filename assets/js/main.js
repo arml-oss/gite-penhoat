@@ -53,10 +53,12 @@
   }
 })();
 
-// Lightbox de la galerie
+// Lightbox de la galerie (navigation : flèches gauche/droite, Échap pour fermer)
 (function () {
-  var items = document.querySelectorAll(".gallery__item img");
+  var items = Array.prototype.slice.call(document.querySelectorAll(".gallery__item img"));
   if (!items.length) return;
+
+  var current = 0;
 
   var box = document.createElement("div");
   box.className = "lightbox";
@@ -68,21 +70,44 @@
   close.setAttribute("aria-label", "Fermer");
   close.innerHTML = "&#10005;";
 
+  var prev = document.createElement("button");
+  prev.className = "lightbox__nav lightbox__nav--prev";
+  prev.setAttribute("aria-label", "Photo précédente");
+  prev.innerHTML = "&#10094;";
+
+  var next = document.createElement("button");
+  next.className = "lightbox__nav lightbox__nav--next";
+  next.setAttribute("aria-label", "Photo suivante");
+  next.innerHTML = "&#10095;";
+
   var full = document.createElement("img");
   full.alt = "";
 
   var caption = document.createElement("div");
   caption.className = "lightbox__caption";
 
+  var counter = document.createElement("div");
+  counter.className = "lightbox__counter";
+
   box.appendChild(close);
+  box.appendChild(prev);
   box.appendChild(full);
+  box.appendChild(next);
   box.appendChild(caption);
+  box.appendChild(counter);
   document.body.appendChild(box);
 
-  function open(item) {
+  function show(i) {
+    current = (i + items.length) % items.length;
+    var item = items[current];
     full.src = item.src;
     full.alt = item.alt || "";
     caption.textContent = item.closest("figure").querySelector("figcaption").textContent;
+    counter.textContent = current + 1 + " / " + items.length;
+  }
+
+  function open(i) {
+    show(i);
     box.classList.add("lightbox--open");
     document.body.style.overflow = "hidden";
   }
@@ -92,17 +117,30 @@
     document.body.style.overflow = "";
   }
 
-  items.forEach(function (item) {
+  items.forEach(function (item, i) {
     item.addEventListener("click", function () {
-      open(item);
+      open(i);
     });
   });
 
-  box.addEventListener("click", function (e) {
-    if (e.target === box || e.target === full || e.target === caption) hide();
+  prev.addEventListener("click", function (e) {
+    e.stopPropagation();
+    show(current - 1);
+  });
+  next.addEventListener("click", function (e) {
+    e.stopPropagation();
+    show(current + 1);
   });
   close.addEventListener("click", hide);
+
+  box.addEventListener("click", function (e) {
+    if (e.target === box || e.target === full) hide();
+  });
+
   document.addEventListener("keydown", function (e) {
+    if (!box.classList.contains("lightbox--open")) return;
     if (e.key === "Escape") hide();
+    if (e.key === "ArrowLeft") show(current - 1);
+    if (e.key === "ArrowRight") show(current + 1);
   });
 })();
