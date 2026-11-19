@@ -34,6 +34,7 @@
       <nav class="nav" id="menu">
         <a href="#gite">Le gîte</a>
         <a href="#confort">Confort</a>
+        <a href="#galerie">Galerie</a>
         <a href="#alentours">Alentours</a>
         <a href="#avis">Avis</a>
         <a href="#infos">Infos pratiques</a>
@@ -96,75 +97,7 @@
 
         <div class="hero__visual">
           <div class="hero__badge"><span class="stars">★★★★★</span> 4,8/5 · 25 avis</div>
-          <svg viewBox="0 0 640 480" role="img" aria-label="Illustration d'une maison de campagne bretonne entourée de collines et de moutons">
-            <defs>
-              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#cfe3f4"/>
-                <stop offset="1" stop-color="#eef3e4"/>
-              </linearGradient>
-              <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#9dbd8a"/>
-                <stop offset="1" stop-color="#6e9a63"/>
-              </linearGradient>
-              <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#7aa66c"/>
-                <stop offset="1" stop-color="#4d7a48"/>
-              </linearGradient>
-            </defs>
-            <rect width="640" height="480" fill="url(#sky)"/>
-            <circle cx="520" cy="96" r="42" fill="#f4c95d" opacity="0.9"/>
-            <ellipse cx="520" cy="96" rx="70" ry="70" fill="#f4c95d" opacity="0.25"/>
-            <path d="M0 320 Q160 220 320 300 T640 280 V480 H0 Z" fill="url(#hill1)"/>
-            <path d="M0 380 Q200 300 420 360 T640 340 V480 H0 Z" fill="url(#hill2)"/>
-            <!-- maison -->
-            <g transform="translate(250,238)">
-              <rect x="0" y="52" width="140" height="90" fill="#f1e9d8" stroke="#d8cbb2" stroke-width="2"/>
-              <path d="M-14 54 L70 0 L154 54 Z" fill="#8a5a3b"/>
-              <path d="M-14 54 L70 0 L154 54" fill="none" stroke="#6f4529" stroke-width="2"/>
-              <rect x="16" y="76" width="26" height="26" fill="#9fc3d8" stroke="#5d5d52" stroke-width="2"/>
-              <rect x="98" y="76" width="26" height="26" fill="#9fc3d8" stroke="#5d5d52" stroke-width="2"/>
-              <rect x="58" y="96" width="24" height="46" fill="#6f4529"/>
-              <rect x="58" y="14" width="16" height="22" fill="#6f4529"/>
-              <rect x="118" y="20" width="12" height="12" rx="2" fill="#c17a3f"/>
-            </g>
-            <!-- arbres -->
-            <g fill="#33523f">
-              <ellipse cx="120" cy="330" rx="34" ry="44"/>
-              <rect x="115" y="360" width="10" height="26" fill="#6f4529"/>
-              <ellipse cx="560" cy="360" rx="40" ry="52"/>
-              <rect x="554" y="396" width="12" height="30" fill="#6f4529"/>
-            </g>
-            <!-- moutons -->
-            <g>
-              <g transform="translate(90,410)">
-                <ellipse cx="0" cy="0" rx="26" ry="18" fill="#faf6ee"/>
-                <circle cx="24" cy="-6" r="10" fill="#33523f"/>
-                <rect x="-6" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-                <rect x="10" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-                <rect x="-22" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-              </g>
-              <g transform="translate(160,428) scale(0.8)">
-                <ellipse cx="0" cy="0" rx="26" ry="18" fill="#f1e9d8"/>
-                <circle cx="24" cy="-6" r="10" fill="#24382b"/>
-                <rect x="-6" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-                <rect x="10" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-                <rect x="-22" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-              </g>
-              <g transform="translate(480,432) scale(0.9)">
-                <ellipse cx="0" cy="0" rx="26" ry="18" fill="#faf6ee"/>
-                <circle cx="24" cy="-6" r="10" fill="#33523f"/>
-                <rect x="-6" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-                <rect x="10" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-                <rect x="-22" y="14" width="6" height="14" rx="2" fill="#5d5d52"/>
-              </g>
-            </g>
-            <!-- oiseaux -->
-            <g fill="none" stroke="#5d5d52" stroke-width="2" stroke-linecap="round">
-              <path d="M180 90 q8 -8 16 0 M204 90 q8 -8 16 0"/>
-              <path d="M420 60 q7 -7 14 0 M442 60 q7 -7 14 0"/>
-            </g>
-          </svg>
-          <p class="photo-note">Illustration — remplacez par de vraies photos du gîte (voir README).</p>
+          <img class="hero-photo" src="assets/img/445331-2_29G34670_da28d4f0a7532b4d40dcc97918d48cba.jpg" alt="Le Gîte de Penhoat, maison de campagne avec son jardin à Plourin-lès-Morlaix">
         </div>
       </div>
     </section>
@@ -173,46 +106,7 @@
     <section class="section section--alt" id="gite">
       <div class="container about__grid">
         <div class="about__visual reveal">
-          <svg viewBox="0 0 560 420" role="img" aria-label="Illustration : produits de la ferme, fromage de chèvre, confiture maison et cidre">
-            <rect width="560" height="420" rx="18" fill="#e7efe6"/>
-            <circle cx="280" cy="210" r="150" fill="#f1e9d8"/>
-            <!-- planche -->
-            <ellipse cx="280" cy="290" rx="180" ry="26" fill="#c9a877"/>
-            <ellipse cx="280" cy="284" rx="180" ry="26" fill="#d8b98c"/>
-            <!-- fromage -->
-            <g transform="translate(180,220)">
-              <path d="M0 40 L30 10 L60 40 Z" fill="#f4e4c1" stroke="#d8cbb2" stroke-width="2"/>
-              <circle cx="30" cy="26" r="3" fill="#c17a3f"/>
-              <circle cx="18" cy="34" r="2.5" fill="#c17a3f"/>
-              <circle cx="42" cy="34" r="2.5" fill="#c17a3f"/>
-            </g>
-            <!-- pot de confiture -->
-            <g transform="translate(262,190)">
-              <rect x="0" y="20" width="56" height="60" rx="8" fill="#b3472f"/>
-              <rect x="0" y="20" width="56" height="60" rx="8" fill="none" stroke="#8a3521" stroke-width="2"/>
-              <rect x="8" y="10" width="40" height="16" rx="4" fill="#9fc3d8" stroke="#5d5d52" stroke-width="2"/>
-              <rect x="10" y="34" width="36" height="24" rx="4" fill="#faf6ee"/>
-              <text x="28" y="51" text-anchor="middle" font-size="12" font-weight="bold" fill="#c17a3f" font-family="Georgia, serif">Confiture</text>
-            </g>
-            <!-- bouteille de cidre -->
-            <g transform="translate(352,170)">
-              <rect x="16" y="0" width="16" height="34" rx="4" fill="#9fc3d8" stroke="#5d5d52" stroke-width="2"/>
-              <path d="M6 34 h36 l6 30 c2 40 -2 66 -24 66 s-26 -26 -24 -66 z" fill="#e8b64c" stroke="#b5862f" stroke-width="2"/>
-              <rect x="4" y="70" width="40" height="22" rx="3" fill="#faf6ee" stroke="#d8cbb2" stroke-width="1.5"/>
-              <text x="24" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="#33523f" font-family="Georgia, serif">Cidre</text>
-            </g>
-            <!-- fleurs -->
-            <g transform="translate(120,140)">
-              <path d="M0 60 Q10 30 8 8" fill="none" stroke="#4d7a48" stroke-width="3"/>
-              <circle cx="8" cy="4" r="10" fill="#e8b64c"/>
-              <circle cx="8" cy="4" r="4" fill="#c17a3f"/>
-            </g>
-            <g transform="translate(430,130)">
-              <path d="M0 60 Q-10 30 -8 8" fill="none" stroke="#4d7a48" stroke-width="3"/>
-              <circle cx="-8" cy="4" r="10" fill="#d97b7b"/>
-              <circle cx="-8" cy="4" r="4" fill="#faf6ee"/>
-            </g>
-          </svg>
+          <img src="assets/img/445331-10_29G34670_07c70113501ff7d0c62c78a49d79dd7e.jpg loading="lazy"" alt="Le séjour du gîte avec sa cheminée">
         </div>
         <div class="about__content reveal">
           <span class="section__eyebrow">Bienvenue</span>
@@ -297,6 +191,50 @@
       </div>
     </section>
 
+    
+    <!-- ===== Galerie ===== -->
+    <section class="section" id="galerie">
+      <div class="container">
+        <span class="section__eyebrow">Galerie</span>
+        <h2 class="section__title">Le gîte en images</h2>
+        <p class="section__intro">Un aperçu de la maison, du jardin et de la vue — pour le reste, venez voir !</p>
+        <div class="gallery">
+          <figure class="gallery__item reveal">
+            <img src="assets/img/445331-1_29G34670_a1877a1d95632f9aefab406850487352.jpg loading="lazy"" alt="Le gîte et son jardin">
+            <figcaption>Le gîte et son jardin</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="assets/img/445331-4_29G34670_3af0cc1334cf83dcc9104acedd21a04a.jpg loading="lazy"" alt="La terrasse">
+            <figcaption>La terrasse</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="assets/img/445331-9_29G34670_508c0cb157bdef708222b9f815b9a261.jpg loading="lazy"" alt="Le séjour et sa cheminée">
+            <figcaption>Le séjour et sa cheminée</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="assets/img/445331-11_29G34670_595d47309f26e80ff2aae0bebb3ee3cf.jpg loading="lazy"" alt="Le coin repas">
+            <figcaption>Le coin repas</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="assets/img/445331-12_29G34670_f45ae9b705f04b7f96d32dd5cd57ab38.jpg loading="lazy"" alt="La cuisine">
+            <figcaption>La cuisine</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="assets/img/445331-14_29G34670_b9786c7bd0013a84ef10a09757c6bcb8.jpg loading="lazy"" alt="Une chambre">
+            <figcaption>Une chambre</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="assets/img/445331-6_29G34670_59c07fe735e6522c13b8f55d4693563a.jpg loading="lazy"" alt="Vue sur la campagne">
+            <figcaption>Vue sur la campagne</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="assets/img/445331-26_29G34670_6a025ea637e008447c1741cb72a5bda7.jpg loading="lazy"" alt="Les chèvres de la ferme">
+            <figcaption>Les chèvres de la ferme</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Alentours ===== -->
     <section class="section section--alt" id="alentours">
       <div class="container">
@@ -326,6 +264,25 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+        </div>
+
+        <div class="region-photos">
+          <figure class="region-card reveal">
+            <img src="assets/img/445331-23_29G34670_6e4526a48b16445fa5c337262cbfc54e.jpg loading="lazy"" alt="La baie de Morlaix">
+            <figcaption>La baie de Morlaix</figcaption>
+          </figure>
+          <figure class="region-card reveal">
+            <img src="assets/img/445331-25_29G34670_fc160c900fbd56bc013f60551e28f043.jpg loading="lazy"" alt="Le viaduc de Morlaix">
+            <figcaption>Le viaduc de Morlaix</figcaption>
+          </figure>
+          <figure class="region-card reveal">
+            <img src="assets/img/445331-27_29G34670_e258c7b89f95b803322737d1d8765167.jpg loading="lazy"" alt="Le littoral breton">
+            <figcaption>Le littoral breton</figcaption>
+          </figure>
+          <figure class="region-card reveal">
+            <img src="assets/img/445331-28_29G34670_a8f840a4a7abdaea83a293df5d700f73.jpg loading="lazy"" alt="Les plages à 17 km">
+            <figcaption>Les plages à 17 km</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -466,7 +423,8 @@
           <h3>Navigation</h3>
           <ul>
             <li><a href="#gite">Le gîte</a></li>
-            <li><a href="#confort">Confort</a></li>
+            <li><a href="#confort">Confort</a>
+        <a href="#galerie">Galerie</a></li>
             <li><a href="#alentours">Alentours</a></li>
             <li><a href="#avis">Avis</a></li>
             <li><a href="#infos">Infos pratiques</a></li>

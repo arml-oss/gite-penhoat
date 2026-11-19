@@ -52,3 +52,57 @@
     });
   }
 })();
+
+// Lightbox de la galerie
+(function () {
+  var items = document.querySelectorAll(".gallery__item img");
+  if (!items.length) return;
+
+  var box = document.createElement("div");
+  box.className = "lightbox";
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-modal", "true");
+
+  var close = document.createElement("button");
+  close.className = "lightbox__close";
+  close.setAttribute("aria-label", "Fermer");
+  close.innerHTML = "&#10005;";
+
+  var full = document.createElement("img");
+  full.alt = "";
+
+  var caption = document.createElement("div");
+  caption.className = "lightbox__caption";
+
+  box.appendChild(close);
+  box.appendChild(full);
+  box.appendChild(caption);
+  document.body.appendChild(box);
+
+  function open(item) {
+    full.src = item.src;
+    full.alt = item.alt || "";
+    caption.textContent = item.closest("figure").querySelector("figcaption").textContent;
+    box.classList.add("lightbox--open");
+    document.body.style.overflow = "hidden";
+  }
+
+  function hide() {
+    box.classList.remove("lightbox--open");
+    document.body.style.overflow = "";
+  }
+
+  items.forEach(function (item) {
+    item.addEventListener("click", function () {
+      open(item);
+    });
+  });
+
+  box.addEventListener("click", function (e) {
+    if (e.target === box || e.target === full || e.target === caption) hide();
+  });
+  close.addEventListener("click", hide);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") hide();
+  });
+})();

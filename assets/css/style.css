@@ -875,3 +875,172 @@ h1, h2, h3 {
     padding: 3.4rem 0;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Photos (hero, à propos)
+   -------------------------------------------------------------------------- */
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.about__visual img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* --------------------------------------------------------------------------
+   Galerie
+   -------------------------------------------------------------------------- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.1rem;
+}
+
+.gallery__item {
+  position: relative;
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: zoom-in;
+  background: var(--green-soft);
+}
+
+.gallery__item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.gallery__item:hover img {
+  transform: scale(1.06);
+}
+
+.gallery__item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.6rem 1rem 0.7rem;
+  background: linear-gradient(180deg, transparent, rgba(36, 56, 43, 0.85));
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   Photos de la région (alentours)
+   -------------------------------------------------------------------------- */
+
+.region-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.1rem;
+  margin-top: 2.5rem;
+}
+
+.region-card {
+  position: relative;
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--green-soft);
+}
+
+.region-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.region-card figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.4rem 0.9rem 0.6rem;
+  background: linear-gradient(180deg, transparent, rgba(36, 56, 43, 0.85));
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   Lightbox
+   -------------------------------------------------------------------------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 26, 22, 0.92);
+  padding: 2rem;
+}
+
+.lightbox--open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: min(1100px, 92vw);
+  max-height: 86vh;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1;
+  border-radius: 999px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lightbox__close:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.lightbox__caption {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive photos
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .gallery,
+  .region-photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

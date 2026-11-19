@@ -30,11 +30,8 @@ assets/img/         Favicon (SVG)
 
 ## À faire avant la mise en ligne
 
-1. **Remplacer les illustrations par de vraies photos** du gîte. Les visuels actuels sont des
-   SVG dessinés (maison bretonne, produits de la ferme) — remplacez les blocs `<svg>` du hero
-   et de la section « Le gîte » par des balises `<img>`, idéalement en WebP (~1600 px de large).
-   Utilisez vos propres photos : les visuels de la fiche Gîtes de France® sont protégés par
-   le droit d'auteur.
+1. ✅ **Photos intégrées** : les vraies photos du gîte ont remplacé les illustrations SVG
+   (hero, section « Le gîte », galerie photos avec visionneuse, cartes régionales).
 2. **Renseigner le nom de domaine** : remplacer `https://EXAMPLE.COM/` dans les balises
    `hreflang` des 4 pages.
 3. Vérifier les **tarifs** affichés (« à partir de 370 €/semaine ») s'ils évoluent.
