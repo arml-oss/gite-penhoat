@@ -1100,3 +1100,35 @@ h1, h2, h3 {
 .lightbox__caption {
   display: none;
 }
+
+/* --------------------------------------------------------------------------
+   Pages légales
+   -------------------------------------------------------------------------- */
+
+.legal-page {
+  max-width: 760px;
+}
+
+.legal-page h2 {
+  font-size: 1.35rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.3rem;
+}
+
+.legal-page p,
+.legal-page ul {
+  color: var(--text-soft);
+}
+
+.legal-page ul {
+  list-style: disc;
+  padding-left: 1.6rem;
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+
+.legal-page a {
+  text-decoration: underline;
+}
